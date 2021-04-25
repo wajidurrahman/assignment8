@@ -19,7 +19,7 @@ const Teams = () => {
             <Header/>
             <div className="allTeam container">
                 {
-                    teams.map(team => <SinglePage teamDetails={team}></SinglePage>)
+                    teams.map(team => <SinglePage key={team.key} teamDetails={team}></SinglePage>)
                 }
             </div>
         </div>
